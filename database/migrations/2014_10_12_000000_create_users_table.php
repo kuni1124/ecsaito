@@ -21,6 +21,10 @@ class CreateUsersTable extends Migration
             $table->string('password');
             $table->rememberToken();
             $table->timestamps();
+            $table->bigInteger('tel_number');
+            $table->string('nikku_name');
+            $table->bigInteger('street_address');
+            $table->Integer('postal_code');
         });
     }
 
