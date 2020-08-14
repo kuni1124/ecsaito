@@ -17,7 +17,7 @@ class CreateShouhingazousTable extends Migration
             $table->bigIncrements('id');
             $table->timestamps();
             $table->Integer('item_number_id');
-            $table->varchar(65535);
+            $table->string('url');
         });
     }
 

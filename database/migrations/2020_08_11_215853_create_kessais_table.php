@@ -16,7 +16,7 @@ class CreateKessaisTable extends Migration
         Schema::create('kessais', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->timestamps();
-            $table->bigIncrements('order_id');
+            $table->bigInteger('order_id');
         });
     }
 

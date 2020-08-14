@@ -16,7 +16,7 @@ class CreateToukousTable extends Migration
         Schema::create('toukous', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->timestamps();
-            $table->foreign('user_id');
+            $table->Integer('user_id');
             $table->string('content');
         });
     }

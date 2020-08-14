@@ -17,12 +17,12 @@ class CreateShouhinsTable extends Migration
             $table->bigIncrements('id');
             $table->timestamps();
            
-            $table->INT('street_address');
+            $table->string('street_address');
             $table->Integer('postal_code');
-            $table->foreign('user_id');
+            $table->Integer('user_id');
             $table->string('name');
             $table->bigInteger('tel_number');
-            $table->bigIncrements('item_number_id');
+            $table->bigInteger('item_number_id');
             $table->Integer('number');
             $table->string('contact');
             $table->DATETIME('date');
