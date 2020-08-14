@@ -18,7 +18,7 @@ class CreateShouhinhyousTable extends Migration
             $table->bigIncrements('id');
             $table->timestamps();
             $table->integer('price');          
-            $table->foreign('user_id');
+            $table->Integer('user_id');
             $table->string('content');
             $table->Integer('item_number_id');
             $table->string('contact');
